@@ -358,7 +358,7 @@ img {
 
 .action-disclaimer {
   font-size: 10px;
-  line-height: 100%;
+  line-height: 14px;
   text-align: left;
 }
 
@@ -400,7 +400,7 @@ img {
 
 .action-phone.grey {
   color: grey;
-  font-size: 28.8px;
+  font-size: 28px;
 }
 
 .button-primary {
@@ -1756,7 +1756,6 @@ img {
 
   .action-phone.grey {
     margin-top: 15px;
-    font-size: 28.8px;
   }
 
   .button-primary.dark {
@@ -2086,7 +2085,6 @@ img {
 
   .action-phone.grey {
     border-top-style: none;
-    font-size: 28.8px;
   }
 
   .button-primary {
