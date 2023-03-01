@@ -42,6 +42,14 @@ h3 {
   font-weight: 700;
 }
 
+h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
 p {
   margin-bottom: 10px;
   font-size: 18px;
@@ -53,6 +61,7 @@ a {
   transition: -webkit-transform 200ms ease;
   transition: transform 200ms ease;
   transition: transform 200ms ease, -webkit-transform 200ms ease;
+  color: #1c1b1a;
   text-decoration: none;
   cursor: pointer;
 }
@@ -184,8 +193,8 @@ img {
 }
 
 .hero-video-wrap.snowboard {
-  background-image: -webkit-gradient(linear, left top, right top, from(#eee), color-stop(50%, hsla(0, 0%, 91.3%, 0)));
-  background-image: linear-gradient(90deg, #eee, hsla(0, 0%, 91.3%, 0) 50%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#eee), to(hsla(0, 0%, 91.3%, 0)));
+  background-image: linear-gradient(90deg, #eee, hsla(0, 0%, 91.3%, 0));
 }
 
 .hero-video-wrap.running {
@@ -2371,6 +2380,14 @@ img {
     height: 160px;
   }
 
+  .clinique-card {
+    border-bottom-style: none;
+  }
+
+  .clinique-card.last {
+    border-bottom-style: solid;
+  }
+
   .new-clinic-wrap {
     left: 34px;
     width: 108px;
@@ -2575,6 +2592,17 @@ img {
 }
 
 #w-node-_331caaba-e497-0f2a-7c69-b1378e10a121-9cc55436 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-cb345211-1e4b-9b20-7e03-2c740e22ab3b-9cc55436 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
   -ms-grid-column-span: 1;
