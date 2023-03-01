@@ -225,6 +225,10 @@ img {
   background-color: #1c1b1a;
 }
 
+.section.darker {
+  background-color: #1c1b1a;
+}
+
 .hero-title-wrap {
   position: absolute;
   z-index: 8888;
@@ -412,6 +416,10 @@ img {
   font-size: 28px;
 }
 
+.action-phone.grey:hover {
+  color: #fff;
+}
+
 .button-primary {
   min-width: 160px;
   border-style: solid;
@@ -504,7 +512,7 @@ img {
   left: 0px;
   z-index: 0;
   height: 500px;
-  margin-top: -30px;
+  margin-top: 40px;
   border-radius: 30px;
 }
 
@@ -634,12 +642,13 @@ img {
   color: #1969ff;
 }
 
-.paragraph-small {
-  font-size: 15px;
+.footer-disclaimer {
+  color: grey;
+  font-size: 16px;
   line-height: 1.733em;
 }
 
-.paragraph-small.small-print {
+.footer-disclaimer.small-print {
   color: grey;
   font-size: 14px;
 }
@@ -718,9 +727,12 @@ img {
 }
 
 .title.ski {
-  margin-top: 100px;
+  margin-top: 0px;
   margin-bottom: 0px;
-  color: #fff;
+  margin-left: 0px;
+  padding-left: 0px;
+  color: grey;
+  text-align: left;
 }
 
 .footer-nav-links {
@@ -790,7 +802,7 @@ img {
   transition: opacity 350ms ease, transform 200ms ease, color 300ms ease;
   transition: opacity 350ms ease, transform 200ms ease, color 300ms ease, -webkit-transform 200ms ease;
   color: grey;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.067em;
   letter-spacing: 0em;
   text-decoration: none;
@@ -864,10 +876,6 @@ img {
   margin-bottom: 10px;
 }
 
-.footer-logo {
-  width: 160px;
-}
-
 .footer-contact {
   z-index: 999999;
   display: -webkit-box;
@@ -916,6 +924,12 @@ img {
   -ms-flex-align: center;
   align-items: center;
   border-bottom-right-radius: 30px;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.footer-map:hover {
+  background-color: hsla(0, 0%, 100%, 0.05);
 }
 
 .image-map {
@@ -1084,7 +1098,9 @@ img {
 }
 
 .heading {
-  font-size: 36px;
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 48px;
 }
 
 .card-services-small {
@@ -1160,8 +1176,8 @@ img {
   grid-column-gap: 40px;
   grid-row-gap: 0px;
   grid-template-areas: "Area-Logo Area-Map Area-Contact";
-  -ms-grid-columns: 160px 40px 1fr 40px 220px;
-  grid-template-columns: 160px 1fr 220px;
+  -ms-grid-columns: 180px 40px 1fr 40px 220px;
+  grid-template-columns: 180px 1fr 220px;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   border: 1px none #000;
@@ -1173,6 +1189,8 @@ img {
   top: 10px;
   right: auto;
   bottom: auto;
+  width: 10px;
+  opacity: 0.5;
 }
 
 .map-bromont {
@@ -1181,6 +1199,8 @@ img {
   top: auto;
   right: 20px;
   bottom: 20px;
+  width: 80px;
+  opacity: 0.5;
 }
 
 .image-2 {
@@ -1293,11 +1313,15 @@ img {
 .cta-ski-simulator {
   margin-top: 60px;
   padding: 20px;
-  border-bottom: 4px solid #fff;
   background-color: hsla(0, 0%, 100%, 0.12);
 }
 
+.cta-ski-simulator.filter-grayscale {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
 .ski-grid {
+  margin-bottom: 100px;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   -ms-grid-columns: 1fr 1fr;
@@ -1332,7 +1356,6 @@ img {
 }
 
 .footer-slogan {
-  max-width: 680px;
   color: #fff;
   font-size: 48px;
   line-height: 48px;
@@ -1354,13 +1377,43 @@ img {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  opacity: 0.1;
 }
 
 .footer-slogan-image {
-  width: 320px;
-  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.footer-content-signature {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  -ms-grid-columns: 470px 1fr 330px;
+  grid-template-columns: 470px 1fr 330px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.underline {
   border-bottom: 4px solid #fff;
+}
+
+.subtitle-ski-instructors {
+  margin-bottom: 10px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 1920px) {
@@ -1500,7 +1553,7 @@ img {
 
   .bg-video-ski {
     height: 600px;
-    margin-top: -30px;
+    margin-top: 60px;
   }
 
   .ski-description {
@@ -1508,8 +1561,9 @@ img {
   }
 
   .ski-title {
-    font-size: 48px;
-    line-height: 48px;
+    margin-bottom: 39px;
+    font-size: 44px;
+    line-height: 44px;
   }
 
   .ski-list {
@@ -1539,7 +1593,11 @@ img {
     grid-row-gap: 0px;
   }
 
-  .paragraph-small.small-print {
+  .footer-disclaimer {
+    font-size: 14px;
+  }
+
+  .footer-disclaimer.small-print {
     margin-bottom: 15px;
   }
 
@@ -1571,8 +1629,10 @@ img {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-grid-columns: 1fr 200px 0.5fr;
-    grid-template-columns: 1fr 200px 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    -ms-grid-columns: 1fr 200px 0.6fr;
+    grid-template-columns: 1fr 200px 0.6fr;
   }
 
   .footer-content {
@@ -1595,10 +1655,6 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
-  }
-
-  .footer-logo {
-    width: 140px;
   }
 
   .footer-contact {
@@ -1638,6 +1694,11 @@ img {
     grid-row-gap: 30px;
   }
 
+  .heading {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
   .card-services-small {
     padding-bottom: 10px;
   }
@@ -1660,7 +1721,7 @@ img {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    grid-column-gap: 40px;
+    grid-column-gap: 50px;
     -ms-grid-columns: 160px 1fr 220px;
     grid-template-columns: 160px 1fr 220px;
   }
@@ -1686,6 +1747,7 @@ img {
   }
 
   .ski-grid {
+    margin-bottom: 60px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
   }
@@ -1696,7 +1758,6 @@ img {
   }
 
   .footer-slogan {
-    max-width: 540px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -1706,9 +1767,11 @@ img {
     margin-bottom: 60px;
   }
 
-  .footer-slogan-image {
-    width: 220px;
-    padding-bottom: 15px;
+  .footer-content-signature {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    -ms-grid-columns: 350px 1fr 220px;
+    grid-template-columns: 350px 1fr 220px;
   }
 }
 
@@ -1863,7 +1926,7 @@ img {
     grid-column-gap: 10px;
   }
 
-  .paragraph-small.small-print {
+  .footer-disclaimer.small-print {
     font-size: 14px;
   }
 
@@ -1916,10 +1979,6 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .footer-logo {
-    width: 160px;
-  }
-
   .footer-contact {
     top: -10px;
     max-width: 220px;
@@ -1969,7 +2028,7 @@ img {
   }
 
   .footer-content-top {
-    max-width: 560px;
+    max-width: 600px;
     margin-right: auto;
     margin-left: auto;
     grid-column-gap: 20px;
@@ -2036,7 +2095,6 @@ img {
   }
 
   .footer-slogan {
-    max-width: 560px;
     font-size: 30px;
     line-height: 30px;
   }
@@ -2047,15 +2105,24 @@ img {
     margin-left: auto;
   }
 
-  .footer-slogan-image {
-    padding-bottom: 10px;
+  .footer-content-signature {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    -ms-grid-columns: 290px 0.25fr 1fr;
+    grid-template-columns: 290px 0.25fr 1fr;
   }
 }
 
 @media screen and (max-width: 479px) {
   h3 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 22px;
   }
 
   p {
@@ -2096,7 +2163,7 @@ img {
   }
 
   .section {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 
@@ -2129,6 +2196,7 @@ img {
 
   .lightbox-thumb-large {
     height: 500px;
+    margin-bottom: 10px;
   }
 
   .clinic-photo {
@@ -2212,11 +2280,12 @@ img {
 
   .bg-video-ski {
     height: 400px;
+    margin-top: 40px;
   }
 
   .ski-title {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 34px;
+    line-height: 34px;
   }
 
   .footer-languages {
@@ -2227,7 +2296,6 @@ img {
   .footer-social-media-grid {
     max-width: 100%;
     margin-top: 15px;
-    margin-right: 20px;
     margin-bottom: 20px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -2241,12 +2309,12 @@ img {
     font-size: 8px;
   }
 
-  .paragraph-small {
+  .footer-disclaimer {
     font-size: 12px;
     line-height: 1.6em;
   }
 
-  .paragraph-small.small-print {
+  .footer-disclaimer.small-print {
     font-size: 12px;
     text-align: center;
   }
@@ -2289,7 +2357,7 @@ img {
   }
 
   .footer {
-    padding-top: 40px;
+    padding-top: 100px;
     padding-bottom: 40px;
   }
 
@@ -2326,8 +2394,12 @@ img {
     grid-template-rows: auto auto auto;
   }
 
+  .footer-nav-link {
+    font-size: 16px;
+  }
+
   .footer-logo {
-    width: 120px;
+    width: 160px;
   }
 
   .footer-contact {
@@ -2338,6 +2410,11 @@ img {
     max-width: 220px;
     margin-right: auto;
     margin-left: auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
   }
 
   .footer-map {
@@ -2421,6 +2498,7 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
     justify-items: center;
+    grid-row-gap: 30px;
     grid-template-areas: "Area-Logo Area-Logo Area-Logo"
       "Area-Map-Long Area-Map-Long Area-Map-Long"
       "Area Area Area";
@@ -2487,10 +2565,12 @@ img {
   }
 
   .footer-slogan {
-    max-width: 310px;
+    max-width: 290px;
+    margin-right: auto;
+    margin-left: auto;
     padding-bottom: 20px;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 36px;
+    line-height: 36px;
     text-align: center;
   }
 
@@ -2509,7 +2589,36 @@ img {
 
   .footer-slogan-image {
     width: 100%;
+    max-width: 170px;
     padding-bottom: 20px;
+    padding-left: 0px;
+  }
+
+  .footer-content-signature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .underline {
+    width: 150px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+  }
+
+  .subtitle-ski-instructors {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .heading-2 {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -2810,6 +2919,22 @@ img {
   grid-row-end: span 1;
 }
 
+#w-node-f0576774-71d4-1bbc-7fdb-306c2531fb9a-9cc55436 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_884b7371-2bba-dab0-b40b-639ede94032b-9cc55436 {
+  -ms-grid-column-align: end;
+  justify-self: end;
+}
+
 #w-node-cc274a12-f959-1a76-ff8d-826358401788-9cc55436 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -2876,6 +3001,11 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+  #w-node-_884b7371-2bba-dab0-b40b-639ede94032b-9cc55436 {
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+
   #w-node-cc274a12-f959-1a76-ff8d-826358401788-9cc55436 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -3026,7 +3156,7 @@ img {
   }
 
   #w-node-f437e057-0478-e987-d869-8a709f40f0ba-9cc55436 {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
   }
@@ -3038,13 +3168,13 @@ img {
   }
 
   #w-node-f437e057-0478-e987-d869-8a709f40f0ba-9cc55436 {
-    -ms-grid-row: 3;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
   }
 
   #w-node-d64d68fa-d5ad-fb6f-29b2-f793d5c28925-9cc55436 {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
   }
