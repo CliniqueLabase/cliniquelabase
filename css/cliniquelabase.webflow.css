@@ -408,8 +408,8 @@ img {
 }
 
 .action-phone {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   color: #fff;
   font-size: 20px;
   text-align: justify;
@@ -420,6 +420,8 @@ img {
 }
 
 .action-phone.grey {
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: grey;
   font-size: 28px;
 }
@@ -521,8 +523,8 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
